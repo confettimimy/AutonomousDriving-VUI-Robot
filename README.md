@@ -1,6 +1,4 @@
-### **[프로젝트 과정 기록](https://blog.naver.com/PostList.nhn?blogId=confettimimy&from=postList&categoryNo=7)**  👈🏻👈🏻👈🏻😃
-
-#
+### **[프로젝트 과정 기록](https://blog.naver.com/PostList.nhn?blogId=confettimimy&from=postList&categoryNo=7)**  👈🏻👈🏻👈🏻😃   
 
 #
 
@@ -11,28 +9,26 @@
 <img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="420">
 
 - 라이다, SLAM, Navigation을 이용한 자율주행 기술
+
 - STT, TTS 기술을 이용한 음성인식 및 음성안내 서비스
+
 - 디스플레이에 박태준 도서관 지도 기능 탑재, 실시간 현위치 서비스   
 
-   
-
-#
+  
 
 #
 
 ## 작동방식
 
-1. 책 제목 음성 입력값 input ▶️ 음성인식 ▶️ 서버 db를 통해 해당 책의 위치 정보를 클라이언트에 음성으로 송출(= 사용자에게 음성안내)
+1. 책 제목 음성 입력값 input ▶️ 음성인식 ▶️ 서버 db를 거쳐 해당 책의 위치 정보를 클라이언트에 음성으로 송출 (=사용자에게 음성안내)
 
 2. 해당 책의 위치 정보를 목적지로, 현재 위치를 출발지로 지정 ▶️ SLAM을 이용해 스스로 주변 물체를 탐지해 자율주행
 
-3. 자율주행 도중 디스플레이의 지도 show 기능을 통해 위치 파악
+3. 자율주행 도중 디스플레이의 지도 show 기능을 통해 실시간 위치 파악
 
-4. 도착
+4. 찾고자 하는 책의 위치에 도착 ▶️ 도착되었다는 음성 안내와 함께 종료   
 
-   
-
-#
 
 #
 
+## 제목
