@@ -15,25 +15,19 @@
 
 <img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410">  
 
+* 라이다, SLAM, Navigation을 이용한 자율주행 기술    
+
+* STT, TTS 기술을 이용한 음성인식 및 음성안내 서비스
+
+* 디스플레이에 박태준 도서관 지도 기능 탑재, 실시간 현위치 서비스  
+
 #
 
-### 시연영상 Demo
+### 충격과 공포의 ''다식이로봇'' 시연영상 Demo 中
 
-<img src="./readme_img/충격과 공포의 다식이 주행 모습.gif"  width="420" height="300"><img src="./readme_img/주행 실시간 시연영상.gif"  width="" height="">
+<img src="./readme_img/충격과 공포의 다식이 주행 모습.gif"  width="320" height="250"><img src="./readme_img/주행 실시간 시연영상.gif"  width="320" height="250">
 
-#
 
-### * 라이다, SLAM, Navigation을 이용한 자율주행 기술
-
-<img src="./readme_img/ROS구현.PNG">    
-
-### * STT, TTS 기술을 이용한 음성인식 및 음성안내 서비스
-
-[사진]    
-
-### * 디스플레이에 박태준 도서관 지도 기능 탑재, 실시간 현위치 서비스  
-
-[사진]
 
 ---
 
