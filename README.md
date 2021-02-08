@@ -13,7 +13,13 @@
 
 개발한 소프트웨어: ts.exe
 
-<img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410">  <img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410"> 
+<img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410">  
+
+#
+
+### 시연영상 Demo
+
+<img src="./readme_img/충격과 공포의 다식이 주행 모습.gif"  width="420" height="300">     <img src="./readme_img/주행 실시간 시연영상.gif"  width="" height="">
 
 #
 
