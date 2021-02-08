@@ -13,7 +13,7 @@
 
 개발한 소프트웨어: ts.exe
 
-<img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410"> 👈🏻<img src="./readme_img/포닉스.PNG"  width="200" height="100">
+<img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410"> 👈🏻<img src="./readme_img/포닉스.png"  width="200" height="100">
 
 * 라이다, SLAM, Navigation을 이용한 자율주행 기술    
 
@@ -37,6 +37,4 @@
 2. 해당 책의 위치 정보를 목적지로 지정 ▶️ SLAM을 이용해 스스로 주변 물체를 탐지하며 스스로 자율주행
 3. 자율주행 도중 디스플레이의 지도 show 기능을 통해 실시간 위치 파악
 4. 찾고자 하는 책의 위치에 도착 ▶️ 도착했다는 음성 안내와 함께 종료
-
----
 
