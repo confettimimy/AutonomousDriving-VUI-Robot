@@ -13,7 +13,7 @@
 
 개발한 소프트웨어: ts.exe
 
-<img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410"> 👈🏻<img src="./readme_img/포닉스.png"  width="200" height="100">
+<img src="./readme_img/개발한 사서 로봇.PNG"  width="320" height="410"> 👈🏻<img src="./readme_img/포닉스.png"  width="140" height="110">
 
 * 라이다, SLAM, Navigation을 이용한 자율주행 기술    
 
