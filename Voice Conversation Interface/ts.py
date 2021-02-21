@@ -37,8 +37,9 @@ import sys
 from time import sleep
 
 from google.cloud import speech
-from google.cloud.speech import enums
-from google.cloud.speech import types
+'''The submodules 'enums' and 'types' have been removed.
+from google.cloud.speech import enums 
+from google.cloud.speech import types'''
 import pyaudio
 from six.moves import queue
 
@@ -57,7 +58,7 @@ print (os.path.dirname(os.path.realpath(__file__)) ) #소스코드 파일 경로
 import map_
 
 # stt용 key
-credential_path =r"/home/pi/Desktop/stt_tts/STT_TTS_KEY.json"
+credential_path =r"C:\Users\gggc8\OneDrive\바탕 화면\AutonomousDriving-VoiceRecognition-AI-Robot\Voice Conversation Interface/STT_TTS_KEY.json"
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 
 
@@ -68,7 +69,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 # Audio recording parameters
 DEVICE = 2
 CHANNELS =1
-RATE = 44100#16000
+RATE = 16000 #44100#16000   # 라즈베리파이용: 44100 / 일반 PC용: 16000
 CHUNK = int(RATE / 10)  # 100ms
 
 
@@ -201,7 +202,8 @@ def listen_print_loop(responses):
        
         transfer = transcript + overwrite_chars # 현재 transfer에 안녕 들어있음
         # 여기에 tts 코드 넣기
-        credential_path =r"/home/pi/Desktop/stt_tts/STT_TTS_KEY.json"
+        credential_path = r"C:\Users\gggc8\OneDrive\바탕 화면\AutonomousDriving-VoiceRecognition-AI-Robot\Voice Conversation Interface/STT_TTS_KEY.json"
+        #r"/home/pi/Desktop/stt_tts/STT_TTS_KEY.json"
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
         sentence = tts.run_quickstart(transfer) #s값 반환
         print("----------------------------------------------------")
@@ -231,17 +233,17 @@ def Audio_main():
     language_code = 'ko-KR'  # a BCP-47 language tag
 
     client = speech.SpeechClient()
-    config = types.RecognitionConfig(
-        encoding=enums.RecognitionConfig.AudioEncoding.LINEAR16,
+    config = speech.RecognitionConfig( #types.RecognitionConfig(
+        encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16, #enums.RecognitionConfig.AudioEncoding.LINEAR16,
         sample_rate_hertz=RATE,
         language_code=language_code)
-    streaming_config = types.StreamingRecognitionConfig(
+    streaming_config = speech.StreamingRecognitionConfig( #types.StreamingRecognitionConfig(
         config=config,
         interim_results=True)
-
+    
     with MicrophoneStream(RATE, CHUNK) as stream:
         audio_generator = stream.generator()
-        requests = (types.StreamingRecognizeRequest(audio_content=content)
+        requests = (speech.StreamingRecognizeRequest(audio_content=content) #(types.StreamingRecognizeRequest(audio_content=content)
                     for content in audio_generator)
 
         responses = client.streaming_recognize(streaming_config, requests)
@@ -261,7 +263,8 @@ if __name__ == '__main__':
     i=0
     while(i<10):
         # stt용 key
-        credential_path =r"/home/pi/Desktop/stt_tts/STT_TTS_KEY.json"
+        credential_path = r"C:\Users\gggc8\OneDrive\바탕 화면\AutonomousDriving-VoiceRecognition-AI-Robot\Voice Conversation Interface/STT_TTS_KEY.json"
+        #r"/home/pi/Desktop/stt_tts/STT_TTS_KEY.json"
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
         Audio_main()
         print("time sleep 6sec")
